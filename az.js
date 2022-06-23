@@ -75,7 +75,7 @@ async function th(){
   if (cluster.isMaster){
     for (let u=0;u<8;u++){
       cluster.fork()
-      console.log('BY :บัง' แบงค์')
+      console.log('BY บัง แบงค์')
     }
     cluster.on('exit',function(){
       cluster.fork()
